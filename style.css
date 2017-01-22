@@ -1,0 +1,24 @@
+body{
+    background-color: lightcyan !important;
+    height: 100ex;
+}
+
+.form-Portion{
+    height: 40ex;
+    width: 50ex;
+    margin: auto;
+    border: 3px solid limegreen;
+    border-radius: 9px;
+    padding: 5px;
+    background-color: palegreen;
+    margin-top: 35ex;
+}
+
+.form-control{
+    margin-top: 8px;
+}
+
+.myBtn{
+    float: right;
+    margin-top: 3em;
+}
