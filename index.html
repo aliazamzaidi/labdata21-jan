@@ -5,10 +5,20 @@
     <title>Form</title>
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
     <div class="container-fluid">
        <div class="row">
+            <div class="col-md-6">
+                <div class="form-Portion" style="background-color:#6FAFD9; border-color: mediumblue">
+                    <form>
+                        <input type="text" placeholder="Email Address" class="form-control">
+                        <input type="Password" placeholder="Password" class="form-control">
+                        <button type="button" class="btn btn-lg btn-primary signInBtn">Sign In</button>
+                    </form>
+                </div>
+            </div>
             <div class="col-md-6">    
                 <div class="form-Portion">
                         <form class="form-group">
@@ -16,12 +26,9 @@
                             <input type="text" id="lastName" class="form-control" name="LastName" placeholder="Last Name">
                             <input type="email" id="email" class="form-control" name="Email" placeholder="Email" required="required">
                             <input type="password" id="password" class="form-control" name="password" placeholder="Password">
-                            <button type="button" id="signUp" class="btn btn-lg btn-success myBtn" onclick="signUpFunc()">Sign Up</button>
+                            <button type="button" id="signUp" class="btn btn-lg btn-success signUpBtn" onclick="signUpFunc()">Sign Up</button>
                         </form>
                 </div>
-            </div>
-            <div>
-                
             </div>
        </div>
        <div class="row"><br>    
@@ -30,4 +37,10 @@
     </div>
 </body>
 <script src="script.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </html>

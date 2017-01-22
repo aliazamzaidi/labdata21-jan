@@ -18,7 +18,21 @@ body{
     margin-top: 8px;
 }
 
-.myBtn{
+.signUpBtn{
     float: right;
     margin-top: 3em;
+}
+
+.signInBtn{
+    float: right;
+    position: relative;
+    /*right: 0;*/
+    padding-bottom: 0px;
+    margin-top: 7.8em;
+}
+
+#para1{
+    font-size: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 3px 2px 2px lightslategrey;
 }

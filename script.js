@@ -22,8 +22,8 @@ function signUpFunc(){
     else if(user.password.length <= 4){
         para1 = 'Password length is more than 4';
     }
-    else if(user.password.length >= 8){
-        para1 = 'Password length should be less than 8 letter';
+    else if(user.password.length >= 14){
+        para1 = 'Password length should be less than 14 letter';
     }
     else if(user.email.indexOf('@') == -1 || user.email.indexOf('.') == -1){
         para1 = 'email should be correct';
@@ -33,9 +33,16 @@ function signUpFunc(){
         putData()
         console.log('working till here')
     }
+
+    //para1 coding
     var para1;
+    //irrelevant portion
+    var spanCreate = document.createElement('span');
+    spanCreate.setAttribute('class','glyphicon glyphicon-thumbs-down');
+    document.getElementById('para1').appendChild(spanCreate);
+    //irrelevant coding portion till here
     document.getElementById('para1').innerHTML += para1 + '<br>';
-    
+        
     function putData(){
        var stringifiedData =  JSON.stringify(user);
         localStorage.setItem('user', stringifiedData);
