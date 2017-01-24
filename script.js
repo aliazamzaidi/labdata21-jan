@@ -41,7 +41,7 @@ function signUpFunc(){
     spanCreate.setAttribute('class','glyphicon glyphicon-thumbs-down');
     document.getElementById('para1').appendChild(spanCreate);
     //irrelevant coding portion till here
-    document.getElementById('para1').innerHTML += para1 + '<br>';
+    document.getElementById('para1').innerHTML = para1 + '<br>';
         
     function putData(){
        var stringifiedData =  JSON.stringify(user);
